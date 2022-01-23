@@ -24,13 +24,15 @@ print("weights1 after training")
 print(model.synapse1)
 
 print("target output after training")
-output = model.feedforward(inputs)
+output = model.forward(inputs)
 print(output)
 
 print("---------------")
-print("now question")
+# Question
 question = np.array([[0, 1, 1 ]])
+print("Question:")
 print(question)
-guess = model.feedforward(question)
-print("guess:")
-print(guess)
+# Prediction
+prediction = model.think(question)
+print("Prediction:")
+print(prediction)

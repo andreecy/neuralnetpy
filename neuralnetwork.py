@@ -1,3 +1,4 @@
+from turtle import forward
 import numpy as np
 
 # return value between 0 and 1
@@ -32,7 +33,7 @@ class NeuralNetwork():
         self.learning_rate = 0.1
 
     # Feed Forward algorithm
-    def feedforward(self, inputs):
+    def forward(self, inputs):
         # Generating the Hidden layer outputs
         # matrix dot product of input-hidden weight, add hidden bias
         hidden = np.dot(inputs, self.synapse0)
@@ -48,6 +49,14 @@ class NeuralNetwork():
         # activation function
         outputs = sigmoid(outputs)
         return outputs
+    
+    # same as forward method
+    def think(self, inputs):
+        return self.forward(inputs)
+        
+    # same as forward method
+    def predict(self, inputs):
+        return self.forward(inputs)
     
     def train(self, inputs, targets):
         # Generating the Hidden layer outputs
