@@ -1,4 +1,3 @@
-from turtle import forward
 import numpy as np
 
 # return value between 0 and 1

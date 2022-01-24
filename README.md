@@ -103,7 +103,7 @@ Full example is located in `examples/basic.py` file
 ├── neuralnetwork.py    # core module
 ├── pyproject.toml
 ├── README.rst
-├── example             # containing examples of usage
+├── examples             # containing examples of usage
 │   ├── basic.py        # basic usage example
 │   └── __init__.py
 └── tests
